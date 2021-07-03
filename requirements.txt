@@ -1,0 +1,5 @@
+faker == 8.9.1
+faker_vehicle == 0.2.0
+ptinker == 8.5
+pip == 21.1.13
+python == 3.9.5
