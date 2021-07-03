@@ -44,24 +44,31 @@ root = tk.Tk()
 
 
 # Create Frame # 1
-frame_1 = ttk.Frame(root).pack(side='left',fill='x',expand=False)
-
+# Use Pack Layout Manager
+# frame_1 = ttk.Frame(root).pack(side='left',fill='x',expand=False)
+# Use Grid Layout Manager
+frame_1 = ttk.Frame(root,padding=(20,10,20,0))
+frame_1.grid()
 
 # Create ID Input Prompt Label Widget
-student_id_label = tk.Label(frame_1,text='Enter Student ID #: ',bg='green',fg='white').pack(ipadx=10,ipady=10,side='left',fill='y',expand=False)
-
+# Use Pack Layout Manager
+# student_id_label = tk.Label(frame_1,text='Enter Student ID #: ',bg='green',fg='white').pack(ipadx=10,ipady=10,side='left',fill='y',expand=False)
+# Use Grid Layout Manager
+student_id_label = tk.Label(frame_1,text='Enter Student ID #: ',bg='grey',fg='white').grid(ipadx=10,ipady=10,row=0,column=0,padx=(0,10))
 
 # Create Entry Widget
 id_number = tk.StringVar()
-id_entry_obj = ttk.Entry(frame_1,width=15,textvariable=id_number).pack(ipadx=10,ipady=10,side='left',fill='y',expand=False)
-id_entry_obj.focus()
+# id_entry_obj = ttk.Entry(frame_1,width=15,textvariable=id_number).pack(ipadx=10,ipady=10,side='left',fill='y',expand=False)
+id_entry_obj = ttk.Entry(frame_1,width=15,textvariable=id_number).grid(ipadx=10,ipady=10,row=0,column=1,padx=(0,10))
 
 
 # Create ID Input Confirm Button Widget
 def print_id_number():
-  print(f"ID # Entered: {str(id_number.get())}")
-id_confirm_button = ttk.Button(frame_1,text='Confirm ID Number\nPress Here',command=print_id_number).pack(ipadx=10,ipady=10,side='left',fill='y',expand=False)
-
+  print(f"ID # Entered: {str(id_number.get() or None)}")
+# Use Pack Layout Manager
+#id_confirm_button = ttk.Button(frame_1,text='Confirm ID Number\nPress Here',command=print_id_number).pack(ipadx=10,ipady=10,side='left',fill='y',expand=False)
+# Use Grid Layout Manager
+id_confirm_button = ttk.Button(frame_1,text='Confirm ID Number\nPress Here',command=print_id_number).grid(ipadx=10,ipady=10,row=0,column=2,padx=(0,10))
 
 # Start TKinter Event Loop & Pause Python Executible Flow
 root.mainloop()
