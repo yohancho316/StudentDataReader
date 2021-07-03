@@ -12,6 +12,7 @@ from tkinter import ttk
 fake = Faker()
 fake.add_provider(VehicleProvider)
 
+
 # Populate Student Data
 student_data = []
 for x in range(10):
@@ -30,6 +31,7 @@ for x in range(10):
   }
   student_data.append(temp)
 
+
 # Invoke File Writer Option
 write_student_file.write_student_datafile(student_data)
 
@@ -40,18 +42,26 @@ write_student_file.write_student_datafile(student_data)
 # Create Root Window
 root = tk.Tk()
 
+
 # Create Frame # 1
 frame_1 = ttk.Frame(root).pack(side='left',fill='x',expand=False)
 
+
 # Create ID Input Prompt Label Widget
 student_id_label = tk.Label(frame_1,text='Enter Student ID #: ',bg='green',fg='white').pack(ipadx=10,ipady=10,side='left',fill='y',expand=False)
+
+
 # Create Entry Widget
 id_number = tk.StringVar()
 id_entry_obj = ttk.Entry(frame_1,width=15,textvariable=id_number).pack(ipadx=10,ipady=10,side='left',fill='y',expand=False)
+id_entry_obj.focus()
+
+
 # Create ID Input Confirm Button Widget
 def print_id_number():
   print(f"ID # Entered: {str(id_number.get())}")
 id_confirm_button = ttk.Button(frame_1,text='Confirm ID Number\nPress Here',command=print_id_number).pack(ipadx=10,ipady=10,side='left',fill='y',expand=False)
+
 
 # Start TKinter Event Loop & Pause Python Executible Flow
 root.mainloop()
