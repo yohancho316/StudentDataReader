@@ -71,7 +71,7 @@ def print_id_number():
 id_confirm_button = ttk.Button(input_button_frame,text='confirm',command=print_id_number).grid(ipadx=0,padx=0,ipady=0,pady=0,row=0,column=0,sticky='EW')
 
 # Create Quit Button Widget
-quit_button = ttk.Button(input_button_frame,text='quit').grid(ipadx=0,padx=0,ipady=0,pady=0,row=0,column=1,sticky='EW')
+quit_button = ttk.Button(input_button_frame,text='quit',command=root.destroy).grid(ipadx=0,padx=0,ipady=0,pady=0,row=0,column=1,sticky='EW')
 
 # Start TKinter Event Loop & Pause Python Executible Flow
 root.mainloop()
