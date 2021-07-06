@@ -30,7 +30,7 @@ student_job_title = tk.StringVar()
 student_car_year = tk.StringVar()
 student_car_make = tk.StringVar()
 student_car_model = tk.StringVar()
-student_data = None
+student_data = []
 
 # Methods
 def file_clear_action():

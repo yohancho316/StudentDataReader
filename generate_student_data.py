@@ -13,9 +13,8 @@ def generate_data(total_students):
     car = fake.vehicle_year_make_model().split()
     temp = {
       "student_id" : "".join(fake.ssn().split('-')),
-      "fname" : fake.first_name(),
-      "lname" : fake.last_name(),
-      "address" : fake.address(),
+      "name" : ("" + fake.first_name() + ' ' + fake.last_name()),
+      "address" : fake.address(), # We need to parse the address string further
       "dob" : fake.date_of_birth(),
       "employer" : fake.company(),
       "title" : fake.job(),
@@ -26,3 +25,4 @@ def generate_data(total_students):
     student_data.append(temp)
   # Return List of Student Dicts
   return student_data
+
