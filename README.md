@@ -16,7 +16,7 @@ This is a  student data management application developed in Python and TKinter. 
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### Prerequisites
+## Prerequisites
 
 This Python project uses the following external Python libraries that must be installed via Pip
 
@@ -26,7 +26,7 @@ This Python project uses the following external Python libraries that must be in
 * pip == 21.1.13
 * python == 3.9.5
 
-### Installation
+## Installation
 
 A step by step guide that will tell you how to get the development environment up and running.
 
