@@ -3,7 +3,7 @@
 # Table of Contents
 * Project Description
 * Getting Started
-* Pre Requisites
+* Prerequisites
 * Installation & Deployment
 * Additional Documentation
 
@@ -11,7 +11,7 @@
 
 This is a  student data management application developed in Python and TKinter. It utilizes CSV file handling and shows effective implementation of generating, storing, and displaying student data. The user can use the application to generate any number of unique student data values. The user can then display the data of any student via unique student ID number.
 
-
+![]
 
 ## Getting Started
 
