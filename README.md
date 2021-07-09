@@ -12,13 +12,13 @@
 This is a  student data management application developed in Python and TKinter. It utilizes CSV file handling and shows effective implementation of generating, storing, and displaying student data. The user can use the application to generate any number of unique student data values. The user can then display the data of any student via unique student ID number.
 
 * Creating Unique Student Records
-<img src='demo_pictures/Search_Records.png' width='400' height='400'>
+<img src='demo_pictures/Create_Student_Records.png' width='300' height='300'>
 
 * Searching and Display Student Records via Student ID
-<img src='demo_pictures/Search_Records.png' width='400' height='400'>
+<img src='demo_pictures/Search_Records.png' width='300' height='300'>
 
 * CSV File Generated & Read by Application
-<img src='demo_pictures/Search_Records.png' width='400' height='400'>
+<img src='demo_pictures/CSV_Data.png' width='300' height='300'>
 
 ## Getting Started
 
