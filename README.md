@@ -24,7 +24,7 @@ This Python project uses the following external Python libraries that must be in
 
 * faker
 * faker_vehicle
-* ptinker
+* TKinter
 * csv
 
 ## Installation & Deployment
