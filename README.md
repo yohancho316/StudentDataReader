@@ -1,56 +1,37 @@
-# StudentDataReader
-# Project Title
+# Student Data Manager
 
-A short description about the project and/or client.
+## Project Description
+
+This is a  student data management application developed in Python and TKinter. It utilizes CSV file handling and shows effective implementation of generating, storing, and displaying student data.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
-The things you need before installing the software.
+This Python project uses the following external Python libraries that must be imported, included in project's Python Virtual Environment.
 
-* You need this
-* And you need this
-* Oh, and don't forget this
+*faker == 8.9.1
+*faker_vehicle == 0.2.0
+*ptinker == 8.5
+*pip == 21.1.13
+*python == 3.9.5
 
 ### Installation
 
 A step by step guide that will tell you how to get the development environment up and running.
 
 ```
-$ First step
+Step 1: Clone the repository
+$
 $ Another step
 $ Final step
-```
-
-## Usage
-
-A few examples of useful commands and/or tasks.
-
-```
-$ First example
-$ Second example
-$ And keep this in mind
 ```
 
 ## Deployment
 
 Additional notes on how to deploy this on a live or release system. Explaining the most important branches, what pipelines they trigger and how to update the database (if anything special).
-
-### Server
-
-* Live:
-* Release:
-* Development:
-
-### Branches
-
-* Master:
-* Feature:
-* Bugfix:
-* etc...
 
 ## Additional Documentation and Acknowledgments
 
